@@ -118,7 +118,5 @@ def compress_string(s):
   return result
 print(compress_string("aaabbcccccca")) #a3b2c6a1 출력
 
-----11. 중복 숫자 15
-
 
 
