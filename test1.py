@@ -112,7 +112,7 @@ def compress_string(s):
           if cnt: result += str(cnt) #cnt가 true이면
           result += c
           cnt = 1 
-      else:
+      else: #같은 문자이면
         cnt += 1 
   if cnt: result += str(cnt)
   return result
