@@ -107,13 +107,13 @@ def compress_string(s):
   cnt = 0
   result = ""
   for c in s:
-      if c != _c: #공백이 아니면
+      if c != _c: #다른 문자이면
           _c = c
-          if cnt: result += str(cnt)
+          if cnt: result += str(cnt) #cnt가 true이면
           result += c
-          cnt = 1 #다른 문자가 들어온 경우
+          cnt = 1 
       else:
-        cnt += 1 #동일한 문자가 들어온 경우
+        cnt += 1 
   if cnt: result += str(cnt)
   return result
 print(compress_string("aaabbcccccca")) #a3b2c6a1 출력
