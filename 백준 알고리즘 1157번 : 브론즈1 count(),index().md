@@ -10,7 +10,7 @@
 <h3>내가 작성한 코드</h3>
 str = input().upper()
 st = list(set(str))
-arr = []
+arr = [] 
 for i in st:
     arr.append(str.count(i))
 if arr.count(max(arr)) > 1:
