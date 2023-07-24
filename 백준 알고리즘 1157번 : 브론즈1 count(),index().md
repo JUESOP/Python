@@ -8,6 +8,8 @@
 첫째 줄에 이 단어에서 가장 많이 사용된 알파벳을 대문자로 출력한다. 단, 가장 많이 사용된 알파벳이 여러 개 존재하는 경우에는 ?를 출력한다.
 
 <h3>내가 작성한 코드</h3>
+
+```
 str = input().upper()
 st = list(set(str))
 arr = [] 
@@ -16,4 +18,5 @@ for i in st:
 if arr.count(max(arr)) > 1:
     print("?")
 else:
-    print(st[arr.index((max(arr)))])
+    print(st[arr.index(max(arr))])
+```
