@@ -18,15 +18,16 @@ Scalene : 세 변의 길이가 모두 다른 경우
 
 ```
 while True:
-    a, b, c = map(int, input().split())
-    if a==b==c==0:
+    arr = sorted(list(map(int, input().split())))
+    if arr == [0,0,0]:
         break
-    elif a >= b+c or b >= a+c or c >= a+b:
+    if sum(arr[0:2]) > arr[2]:
+        if len(set(arr)) == 1:
+            print("Equilateral")
+        elif len(set(arr)) == 2:
+            print("Isosceles")
+        elif len(set(arr)) == 3:
+            print("Scalene")
+    else:
         print("Invalid")
-    elif a==b==c:
-        print("Equilateral")
-    elif a==b or a==c or b==c:
-        print("Isosceles")
-    elif:
-        print("Scalene")
 ```
